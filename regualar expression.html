@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+	<h1>Regular Expression</h1>
+	<script type="text/javascript">
+		let r=/Nikhil/;
+		let o=r.test("Nikhil");
+		document.write(o);
+		//case senstive
+		let s=/nikhil/i;
+		let w=s.test("Nikhil");
+		document.write("<br>");
+		document.write(w);
+		document.write("<br>");
+		let e=/^r/;
+		w=e.test("Nikhil");
+		document.write(w);
+		document.write("<br>");
+		let k=/Nikhil/
+		k=/Nikhil/g;
+		l=k.exec(" nikhil Nikhil");
+		console.log(l.index)
+		l=k.exec(" Nikhil  nikhil");
+		console.log(l.index)
+		document.write("<br>");
+		let a=" Nikhil";
+		a1=new RegExp(`{a}`)
+		o1=a1.test(" Nikhil")
+		document.write(o1);
+
+	</script>
+
+</body>
+</html>

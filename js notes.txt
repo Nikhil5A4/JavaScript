@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js introduction</title>
+	<!-- <script type="text/javascript" src="external.js"></script> -->
+</head>
+<body>
+	<h1>Java introduction</h1>
+	<script> 
+		var a = 7;
+		document.write("Hello JS</br>");
+	document.write("the value is", a);
+
+	</script>
+</body>
+</html>
+-------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alert</title>
+</head>
+<body>
+	 <script type="text/javascript">
+	 	//1. window alert
+	 	//alert("sucess");
+	 	//2.conformation box
+		var c= confirm("Are you sure delete the Record");
+		document.write(c);
+	</script>
+</body>
+</html>
+
+this is a conformation box 
+------	 	 
+var a= prompt("Enter the value")
+document.write(eval(a))
+
+to cal the values and to use prompt to get that use eval like above 
+-------
+var a= prompt("Enter the value")
+		var b= prompt("Enter the value")
+		var a= parseInt(a)
+		var b= parseInt(b)
+		document.write(a+b)
+it wil calu the value inthe alert box and display the total value in the page 
+------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM /properties</title>
+</head>
+<body>
+	<h1>DOM</h1>
+	<a href="">Click here</a>
+	<a href="">Click here1</a>
+	<script type="text/javascript">
+		let d= document;
+		console.log(dlinks);
+	</script>
+
+</body>
+</html>
+DOM properties 
+-------
+<body>
+     <img id="img_id" src="../../capstoneproject2/img/img-1.jpg"/>
+     <script type="text/javascript">
+     </script>
+</body>
+this is to to get image by using java script
+----------
+<body>
+      <input type="text" name=""id="ins_id"value="Nikhil">
+      <script type="text/javascript">
+      	document.getElementById("ins_id").style.border = " 5px solid green";
+      	ins.value='Nikhil'
+      </script>
+</body>
+this to get the box and the id name in that box and the border color also .
+-----------
+<body>
+	<p class="Topic">Html</p>
+	<p class="Topic">Css</p>
+	<p class="Topic">Bootstap</p>
+	<p class="Topic">Javascript</p>
+	<script type="text/javascript">
+		let Nikhil = document.getElementsByClassName('Topic');
+		console.log(Nikhil);
+		Nikhil[0].innerHtml ='Hypertext markup language'
+		Nikhil.innerHtml='Bootstrap'
+	</script>
+</body>
+this is to get all the input the values in page and console 
+-------
+
+ <body>
+ 	<table border="2 px">
+ 		<tr>
+ 			<td></td>
+ 			<td></td>
+ 			<td></td>
+ 			     </tr>
+ 			     <tr>
+ 			     	<td></td>
+ 			     	<td></td>
+ 			     	<td></td>
+ 			     </tr>
+ 			     <tr>
+ 			     	<td></td>
+ 			     	<td></td>
+ 			     	<td></td>
+ 			     </tr>
+ 	</table>
+ 	<script type="text/javascript">
+ 		let d = document.getElementsByTagName('td');
+ 		d[0].innerText='1';
+ 		d[1].innerText='2';
+ 		d[2].innerText='3';
+ 		d[3].innerText='4';
+ 		d[4].innerText='5';
+ 		d[5].innerText='6';
+ 		d[6].innerText='7';
+ 		d[7].innerText='8';
+ 		d[8].innerText='9';
+</script>
+this is to get the table withe 3rows and 9 colums 
+-------
+var a =prompt('scan your id here');
+ function scanyourid(rollno){
+ document.write(rollno)
+  }
+ scanyourid(a)
+this is function that scan your id and get the rollno 
+-------
+ function sum(a=0,b=0){
+ document.write(a+b);
+  }
+ sum()
+this can show the value that in sum a is  ans b is 0 and the o/p is 0
+--------
+events 
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>EVent handler</title>
+</head>
+<body>
+	<!--inline event handler-->
+	<button onclick="test()">Click Here</button>
+	<script type="text/javascript">
+		function test(){
+			alert("testing...")
+			document.body.style.background='olive'
+		}
+	</script>
+
+</body>
+</html>
+-------
+<!--two wayevnt properties-->
+	<button id="btn_id">Click Here</button>
+	<script type="text/javascript">
+		//2nd way
+		let btn =document.getElementById('btn_id');
+		btn.onclick=function(){
+			alert("hi..")
+			document.body.style.background = 'olive' 
+		}
+	</script>
+this is 2nd way onclick!!!
+-------
+Event is nothing about action we have 3 ways of handle events
+1.Inline Event handlers(By using event atrributes in HTML)
+Ex: toutton onclick= "javascriptcode",
+2.By Using Event Properties in IS
+Biti Let ben = document gettlementsyld("bte id')
+bt. onclick = functionname/anonmynou function
+3.8y Using addeventListener() method in J5
+lEt Let btr = document, getElementayId/'btn id'")
+function)
+btn. addlEventListener/event name, functionname/anonmynous
+--------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouse</title>
+</head>
+<body>
+	<button id="btn_id">Nikhil</button>
+	<script type="text/javascript">
+		let btn = document.getElementById('btn_id')
+		btn.onmouseout = sample
+		function sample (){
+			 document.body.style.background='olive';
+		}
+	</script>
+
+</body>
+</html>
+thizs is a mouse move if u move the mouse on the button it will shiw the color
+------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String</title>
+</head>
+<body>
+	<h2>strings Methods</h2>
+	<script type="text/javascript">
+		let str = 'Nikhil';
+		document.write(str)
+	</script>
+</body>
+</html>
+this is string....!
+---------- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr =['ravi','raju','ravi','kiran'];
+		var val =  prompt("enter your name ")
+		let c=0;
+		for (let i =0; i<arr.length;i++)
+		 {
+		 	document.write(arr[i]+"<br>");
+		 	if(arr[i]==val)
+		 	{
+		 		c++;
+		 	}
+		}
+			document.write(c);
+	</script>
+
+</body>
+</html>
+this pragram will show that name and its number that how many times it present in the program !!!!  
+---------

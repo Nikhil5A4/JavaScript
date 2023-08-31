@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task2.0</title>
+	<style type="text/css">
+   .div1{
+   height: 500px;
+   width: 1300px;
+   border: 5px solid black;
+   margin:130px ;
+   margin-left: 300px;
+   }
+   .a{
+ height: 470px;
+ width: 850px;
+ margin-left: 10px;
+ margin-top: 10px;
+ border: 5px solid black;
+   }
+   .b{
+ height: 430px;
+ width: 250px;
+ border: 5px solid black;
+ float: left;
+ margin-top: 10px;
+ margin-left: 10px;
+ float: left;
+
+}
+#c{
+	height: 430px;
+ width: 250px;
+ border: 5px solid black;
+ float: right;
+ margin-top: -450px;
+ margin-right: 100px;
+}
+.d{
+	height: 430px;
+ width: 250px;
+
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+ <div class="a">
+<div class="b"><img class="d" src="p.jpg" onclick="move()"></div>
+<div class="b"><img class="d" src="2.jpg"onclick="move2()"></div>
+<div class="b"><img class="d" src="3.jpg"onclick="move3()"></div>
+</div>
+<div id="c"></div>
+	</div>
+	<script type="text/javascript">
+ function move()
+	  	 {
+	  	 	
+	  	 	document.getElementById('c').innerHTML="<img src='p.jpg' style='height:430px;width:250px' >";
+
+	  	 }
+	  	  function move2()
+	  	 {
+	  	 	
+	  	 	document.getElementById('c').innerHTML="<img src='2.jpg' style='height:430px;width:250px' >";
+	  	 	
+	  	 }
+	  	  function move3()
+	  	 {
+	  	 	
+	  	 	document.getElementById('c').innerHTML="<img src='3.jpg' style='height:430px;width:250px' >";
+	  	 	
+	  	 }
+	</script>
+
+</body>
+</html>

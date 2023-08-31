@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+	<style type="text/css">
+		.a{
+			background-color: black;
+			font-size: 20px;
+			color: red;
+		}
+		.b{
+			background-color: black;
+			font-size: 20px;
+			color: red;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>String Methods</h1>
+	<table border="solid">
+		<tr class="a">
+			<td>N</td>
+			<td>i</td>
+			<td>k</td>
+			<td>h</td>
+			<td>i</td>
+			<td>L</td>
+		</tr>
+		<tr class="b">
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+	</table>
+<script type="text/javascript">
+	function getstr(str)
+	{
+		document.write(str+"<br>");
+	}
+	name='Nikhil'
+	getstr('Nikhil');
+	getstr(name.length);
+	getstr(name.charAt(2));
+	getstr(name.indexOf('Ni'));
+	getstr(name.indexOf('kh'));
+	getstr(name.lastIndexOf('il'));
+	str1='NIKHIL';
+	getstr(str1.toLowerCase());
+	str2='nikhil';
+	getstr(str1.toUpperCase());
+</script>
+</body>
+</html>
